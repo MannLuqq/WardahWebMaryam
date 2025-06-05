@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  background: linear-gradient(to bottom, transparent 0%, #f9c2d1 50%, #add8f5 100%);
+  min-height: 100vh;
+  position: relative;
+}
+
+header {
+  background-image: url('img/background1.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  position: relative;
+}
+
+.header-overlay {
+  background: rgba(255, 255, 255, 0.6);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  object-fit: cover;
+  border: 4px solid white;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  color: #d62857;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #c91450;
+  padding: 0.7rem;
+  gap: 2rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.product-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.product-box {
+  background: #fff0f5;
+  padding: 1.5rem;
+  border-radius: 20px;
+  width: 280px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.product-box img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.product-box h2 {
+  margin: 1rem 0 0.5rem;
+  color: #9d174d;
+}
+
+.product-box button {
+  background-color: #c91450;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.product-box button:hover {
+  background-color: #9d174d;
+}
+
+.product-list {
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.product-list a {
+  color: #c91450;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: transparent;
+}
+
+footer h3 {
+  margin-bottom: 0.5rem;
+}
+
+footer a {
+  color: #c91450;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+.tiktok-icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-left: 2px;
+  transition: transform 0.3s ease;
+}
+
+.tiktok-icon:hover {
+  transform: scale(1.2);
+}
+
+
+body::before,
+body::after {
+  content: "";
+  position: absolute;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+body::before {
+  width: 100px;
+  height: 100px;
+  top: 100px;
+  left: 30px;
+}
+
+body::after {
+  width: 120px;
+  height: 120px;
+  bottom: 100px;
+  right: 40px;
+}
